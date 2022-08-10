@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Propriedade Float</title>
+    <style>
+        .img1{
+            width: 100px;
+            height: 120px;
+            float: right;
+            margin-left: 15px;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .img2{
+            width: 100px;
+            height: 120px;
+            float: left;
+            margin-right: 15px;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        div{
+            float: left;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .div1 {
+            background: red;
+        }
+
+        .div2 {
+            background: yellow;
+        }
+
+        .div3 {
+            background: green;
+        }
+        .center {
+            background: green;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+    </style>
+
+</head>
+<body>
+    <h1>Propriedade Float</h1>
+    <p>A propriedade float é usada para posicionar e formatar elementos, por exemplo deixar uma imagem flutuar à esquerda de um texto.</p>
+    <p>A propriedadefloat possui os seguintes valores:
+    </p>
+    <ul>
+        <li>left: faz o elemento flutuar à esquerda de seu container</li>
+        <li>right: faz o elemento flutuar à direita de seu container</li>
+    </ul>
+    <h2>Flutuando a imagem para a direita do texto:</h2>
+    <p><img src="img/css.png" alt="" class="img1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi est perferendis minima voluptas accusamus, omnis hic cupiditate perspiciatis placeat dolor odio dolores quisquam ducimus quas! Debitis nemo aspernatur quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse nam quos quis fuga reprehenderit repellendus laboriosam at temporibus! Praesentium temporibus ipsam ducimus ex quidem, doloribus totam consectetur quia vitae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, facilis libero. Facilis delectus, quo quam neque non quidem quia architecto expedita esse quas accusamus repellat. Vel aspernatur cupiditate a molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam hic natus temporibus deserunt qui minus consequatur. </p>
+    <h2>Flutuando a imagem para a esquerda do texto:</h2>
+    <p><img src="img/css.png" alt="" class="img2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nisi est perferendis minima voluptas accusamus, omnis hic cupiditate perspiciatis placeat dolor odio dolores quisquam ducimus quas! Debitis nemo aspernatur quod. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse nam quos quis fuga reprehenderit repellendus laboriosam at temporibus! Praesentium temporibus ipsam ducimus ex quidem, doloribus totam consectetur quia vitae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, facilis libero. Facilis delectus, quo quam neque non quidem quia architecto expedita esse quas accusamus repellat. Vel aspernatur cupiditate a molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo veniam hic natus temporibus deserunt qui minus consequatur. </p>
+    <h2>Flutuando um elemento ao lado do outro</h2>
+    <p>Normalmente, os elementos div serão exibidos um em cima do outro. Porém, se usarmos a propriedade float, podemos deixa-los flutuarem próximos uns dos outros:</p>
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+    <div class="div3">Div 3</div>
+    <div class="center">Div center</div>
+    
+</body>
+</html>

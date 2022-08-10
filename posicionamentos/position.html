@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Posicionamento</title>
+    <style>
+        .static{ /*Aplicando o posicionamento estático na div static*/
+            position: static;
+            border: 2px solid red;
+            padding: 5px;
+        }
+        .relative{
+            border: 2px solid red;
+            padding: 5px;
+            position: relative;
+            left: 50px;
+          
+            
+            width: 250px;
+            height: 150px;
+        }
+        .fixed{
+            border: 2px solid red;
+            padding: 5px;
+            position: fixed;
+            right: 0;
+            top: 10px;
+
+        }
+        .absolute{
+            border: 2px solid red;
+            padding: 5px;
+            width: 150px;
+            height: 50px;
+            position: absolute;
+            top: 50px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Posicionamentos</h1>
+    <p>A propriedade position especifica o tipo de posicionamento que damos para um elemento:</p>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+    </ul>
+    <p>Os elementos são posicionados usando as propriedades top, bottom, left, right.</p>
+    <h2>Position Static</h2>
+    <p>Por padrão, os elementos já são posicionados de forma estática. Os elementos posicionados de forma estática não são afetados pelas propriedades top, bottom, left, right. Um elemento com position: static; está sempre posicionado de acordo com o fluxo normal da página.</p>
+    <div class="static">Esta div possui position:static;</div>
+    <h2>Position Relative</h2>
+    <p>Um elemento com position:relative; está posicionado em relação à sua posição normal. As propriedades top, bottom, left e right servem para posicionar o elemento.
+    </p>
+    <div class="relative">Esta div possui um position:relative;</div>
+    <h2>Position Fixed</h2>
+    <p>Um elemento com position:fixed; é posicionado em relação à janela de visualização, ou seja, ele permanece sempre no mesmo lugar. As propriedades top, bottom, left e right servem para posicionar o elemento.</p>
+    <div class="fixed">Esta div possui position:fixed;</div>
+    <h2>Position Absolute</h2>
+    <p>Um elemento com position:absolute; é posicionado em relação ao ancestral posicionado mais próximo. Poré., caso o elemento posicionado com absolute não tiver ancestrais posicionados, ele usará o corpo do documento.
+        <div class="relative">
+            Esta div possui position:relative;
+            <div class="absolute">
+                Esta div possui position:absolute;
+            </div>
+        </div>
+    </p>
+    
+</body>
+</html>
